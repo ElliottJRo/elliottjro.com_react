@@ -1,0 +1,78 @@
+/**
+ * React Static Boilerplate
+ * https://github.com/koistya/react-static-boilerplate
+ * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+ */
+
+@import '../variables.scss';
+
+// The wrapper was defined with a fixed width and height
+// Note, that the pointer-events property is set to 'none'.
+// We don't need any pointer events in the entire element.
+.menu-icon-wrapper{
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    pointer-events: none;
+    transition: 0.1s;
+}
+
+// To perform the scaled transform for the second demo
+.menu-icon-wrapper.scaled{
+    transform: scale(0.5);
+}
+
+// Adjusting the position of the SVG element
+.menu-icon-wrapper svg{
+    position: absolute;
+    top: -33px;
+    left: -33px;
+}
+
+// Defining the styles for the path elements
+.menu-icon-wrapper svg path{
+    stroke: #fff;
+    stroke-width: 6px;
+    stroke-linecap: round;
+    fill: transparent;
+}
+
+// Setting the pointer-events property to 'auto',
+// and allowing only events for the trigger element
+.menu-icon-wrapper .menu-icon-trigger{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    pointer-events: auto;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Navigation {
+  display: flex;
+  flex-direction: row;
+  margin: 2em 0 5em 0;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.Navigation-item {
+  padding: 0 2em;
+}
+
+.Navigation-link {
+  padding: 0.5em 1em;
+  color: $brand-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 3px solid $brand-color;
+    color: $text-color;
+  }
+}
