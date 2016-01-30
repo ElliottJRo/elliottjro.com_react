@@ -7,8 +7,8 @@
 @import '../variables.scss';
 
 // The wrapper was defined with a fixed width and height
-// Note, that the pointer-events property is set to 'none'.
-// We don't need any pointer events in the entire element.
+// Note, that the pointer-events property is set to none.
+// We dont need any pointer events in the entire element.
 .menu-icon-wrapper{
     position: relative;
     display: inline-block;
@@ -31,14 +31,14 @@
 }
 
 // Defining the styles for the path elements
-.menu-icon-wrapper svg path{
-    stroke: #fff;
+.menu-icon-wrapper svg path {
+    stroke: "#fff";
     stroke-width: 6px;
     stroke-linecap: round;
     fill: transparent;
 }
 
-// Setting the pointer-events property to 'auto',
+// Setting the pointer-events property to auto,
 // and allowing only events for the trigger element
 .menu-icon-wrapper .menu-icon-trigger{
     position: relative;

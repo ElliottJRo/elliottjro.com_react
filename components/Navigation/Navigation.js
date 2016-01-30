@@ -7,7 +7,7 @@
 import React from 'react';
 import './Navigation.scss';
 import Link from '../Link';
-import Segment from 'Segment';
+import Segment from 'segment-js';
 
 function Navigation() {
   return (
